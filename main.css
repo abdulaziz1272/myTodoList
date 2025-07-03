@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
+body{
+    background: rgb(72, 72, 238);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 80px;
+}
+.input-container{
+    display: flex;
+    position: sticky;
+    top: 50px;
+    z-index: 100;
+    gap: 25px;
+    padding: 30px 55px;
+    background: rgb(232, 232, 232);
+    border-radius: 10px;
+    border: solid 7px rgb(91, 109, 226);
+}
+#note-input{
+    width: 300px;
+    height: 35px;
+    outline: none;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+}
+#note-btn{
+    width: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 3px;
+}
+#note-btn:hover{
+    background: #218838;
+}
+#note-btn:active{
+    transform: scale(0.95);
+    opacity: 0.7;
+}
+
+
+.note-container{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.note-container li{
+    width: 485px;
+    background: rgb(232, 232, 232);
+    border-radius: 5px;
+    padding: 20px 60px 20px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.note-container li p{
+    font-size: 20px;
+    cursor: pointer;
+}
+.note-container li button{
+    position: absolute;
+    right: 10px;
+    transform: rotate(45deg);
+    font-size: 36px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    color: red;
+    background-color: transparent;
+}
+.note-container li button:hover{
+    background-color: rgb(219, 217, 217);
+}
+.note-container li button:active{
+    transform: scale(0.95) rotate(45deg);
+    background-color: rgb(219, 217, 217);
+}
+.added-time{
+    position: absolute;
+    bottom: 2px;
+    left: 20px;
+    display: flex;
+    gap: 3px;
+    font-size: 14px;
+    color: rgb(77, 76, 76);
+}
+.real-time{
+    position: fixed;
+    left: 100px;
+    top: 30px;
+    font-size: 25px;
+    color: white;
+}
+.done{
+    text-decoration: line-through;
+}
+.save-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 30px;
+    right: 100px;
+}
+.save-container button{
+    width: 120px;
+    padding: 6px 0;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.save-container button:active{
+    transform: scale(0.97);
+}
+.save-btn{
+    background: #28a745;
+}
+.save-btn:hover{
+    background: #218838;
+}
+.clear-btn{
+    background: #dc3545;
+}
+.clear-btn:hover{
+    background: #c82333;
+}

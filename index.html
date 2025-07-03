@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form class="input-container">
+        <input type="text" id="note-input" placeholder="Add to your list">
+        <button id="note-btn">Add</button>
+    </form>
+
+    <ol class="note-container"></ol>
+
+    <div class="real-time">
+        <span class="real-hrs">00</span>
+        <span>:</span>
+        <span class="real-min">00</span>
+        <span>:</span>
+        <span class="real-sec">00</span>
+    </div>
+    <div class="save-container">
+        <button class="save-btn" onclick="saveEverything()">Save</button>
+        <button class="clear-btn" onclick="clearAll()">Clear all</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
