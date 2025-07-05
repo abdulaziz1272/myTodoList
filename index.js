@@ -105,3 +105,4 @@ function clearAll(){
     localStorage.setItem("savedLists", addedLists.innerHTML);
 }
 // save and clear everything
+
