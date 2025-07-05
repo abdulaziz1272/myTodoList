@@ -19,6 +19,7 @@ realTimeDisplayer();
 // real time displayer
 
 
+
 // upload saved lists
 const addedLists = document.querySelector(".note-container");
 
@@ -73,6 +74,7 @@ inputForm.addEventListener("submit", (event) => {
 // Add input
 
 
+
 // remove list
 
 addedLists.addEventListener("click", (event) =>{
@@ -83,6 +85,8 @@ addedLists.addEventListener("click", (event) =>{
 
 // remove list
 
+
+
 // mark as done
 
 addedLists.addEventListener("click", (event) =>{
@@ -92,6 +96,7 @@ addedLists.addEventListener("click", (event) =>{
 })
 
 // mark as done
+
 
 
 // save and clear everything
