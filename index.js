@@ -107,6 +107,6 @@ function saveEverything(){
 
 function clearAll(){
     addedLists.innerHTML = ""
-    localStorage.setItem("savedLists", addedLists.innerHTML);
+    // localStorage.setItem("savedLists", addedLists.innerHTML);
 }
 // save and clear everything
